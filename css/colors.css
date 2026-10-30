@@ -1,0 +1,42 @@
+/*------------------------------------------------------------------
+    File Name: colors.css
+    Description: Arusha Dream Football Centre Theme Colors (Greenish Theme)
+-------------------------------------------------------------------*/
+
+:root {
+    --primary-color: #16a34a;
+    --primary-hover: #15803d;
+    --primary-dark: #14532d;
+    --primary-light: #22c55e;
+    --accent-yellow: #ffcb05;
+}
+
+/* Primary Greenish Accent Classes */
+.theme-color,
+.th-color {
+    color: #16a34a !important;
+}
+
+.theme-bg,
+.thbg-color {
+    background-color: #16a34a !important;
+}
+
+.theme-border {
+    border-color: #16a34a !important;
+}
+
+/* Button & Hover Highlights */
+.btn-theme {
+    background-color: #16a34a;
+    border-color: #16a34a;
+    color: #ffffff;
+}
+
+.btn-theme:hover,
+.btn-theme:focus {
+    background-color: #15803d;
+    border-color: #15803d;
+    color: #ffffff;
+}
+
