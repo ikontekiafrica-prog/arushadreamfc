@@ -7,6 +7,11 @@
 (function () {
   // Master Header HTML Template
   var masterHeaderHTML = 
+'<!-- ==================================================================\n' +
+'     ARUSHA DREAM FOOTBALL CENTRE - GLOBAL MASTER HEADER\n' +
+'     This is the single header called across all pages of the site.\n' +
+'     Edit here (or in js/header.js) to update all pages simultaneously.\n' +
+'================================================================== -->\n' +
 '<header id="site-header-inner">\n' +
 '   <div class="container">\n' +
 '      <div class="header-top">\n' +
@@ -67,7 +72,7 @@
 '                                 <li><a href="team.html">Team</a></li>\n' +
 '                                 <li><a href="news.html">News</a></li>\n' +
 '                                 <li class="dropdown mega-dropdown">\n' +
-'                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<span class="caret"></span></a>\n' +
+'                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<span class="caret"></span></a>				\n' +
 '                                    <ul class="dropdown-menu mega-dropdown-menu">\n' +
 '                                       <li class="col-sm-8">\n' +
 '                                          <ul>\n' +
@@ -119,7 +124,7 @@
 '                              <div class="input-group stylish-input-group">\n' +
 '                                 <input type="text" class="form-control" placeholder="Search Arusha Dream FC...">\n' +
 '                                 <span class="input-group-addon">\n' +
-'                                 <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>\n' +
+'                                 <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>  \n' +
 '                                 </span>\n' +
 '                              </div>\n' +
 '                           </div>\n' +
@@ -131,7 +136,8 @@
 '         </div>\n' +
 '      </div>\n' +
 '   </div>\n' +
-'</header>';
+'</header>\n' +
+'\n';
 
   function highlightActive() {
     var rawPath = window.location.pathname.split('/').pop() || 'index.html';
