@@ -36,9 +36,13 @@
        LOADER -->
         =============================================== */
 
-    $(window).load(function() {
-        $("#preloader").on(500).fadeOut();
-        $(".preloader").on(600).fadeOut("slow");
+    $(document).ready(function() {
+        $("#preloader").fadeOut(300);
+        $(".preloader").fadeOut("fast");
+    });
+    $(window).on('load', function() {
+        $("#preloader").fadeOut(200);
+        $(".preloader").fadeOut("fast");
     });
 
     /* ==============================================
@@ -227,20 +231,34 @@ var TxtType = function(el, toRotate, period) {
                 document.body.appendChild(css);
             };
 			
-/** menu **/
+/** menu dropdown hover & click handling across desktop and small screens **/
 
 $(document).ready(function(){
-          $(".dropdown").hover(            
-              function() {
-                  $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
-                  $(this).toggleClass('open');        
-              },
-              function() {
-                  $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
-                  $(this).toggleClass('open');       
-              }
-          );
-         });
+    // Dropdown hover handling
+    $(".dropdown").on('mouseenter', function() {
+        $(this).addClass('open');
+        $(this).find('> .dropdown-menu').stop(true, true).slideDown(250);
+    }).on('mouseleave', function() {
+        $(this).removeClass('open');
+        $(this).find('> .dropdown-menu').stop(true, true).slideUp(200);
+    });
+
+    // Dropdown click / tap toggle handling (crucial for mobile, tablets and touchscreens)
+    $(".dropdown > a.dropdown-toggle").on('click', function(e) {
+        var $dropdown = $(this).parent('.dropdown');
+        var $menu = $dropdown.find('> .dropdown-menu');
+
+        if ($dropdown.hasClass('open')) {
+            $dropdown.removeClass('open');
+            $menu.stop(true, true).slideUp(200);
+        } else {
+            $dropdown.addClass('open');
+            $menu.stop(true, true).slideDown(250);
+        }
+        e.preventDefault();
+        e.stopPropagation();
+    });
+});
 		 
 /** slider js **/
 

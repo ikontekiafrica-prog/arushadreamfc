@@ -1,14 +1,29 @@
 /*------------------------------------------------------------------
     File Name: colors.css
-    Description: Arusha Dream Football Centre Theme Colors (Greenish Theme)
+    Description: Arusha Dream Football Centre Theme Colors (Greenish & Vibrant Orange Theme)
 -------------------------------------------------------------------*/
 
 :root {
+    /* Primary Athletic Green */
     --primary-color: #16a34a;
     --primary-hover: #15803d;
     --primary-dark: #14532d;
     --primary-light: #22c55e;
+    
+    /* Energetic Grassroots Orange */
+    --accent-orange: #f97316;
+    --accent-orange-hover: #ea580c;
+    --accent-orange-dark: #c2410c;
+    --accent-orange-light: #fb923c;
+    --accent-orange-gradient: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    
+    /* Golden Glory Accent */
     --accent-yellow: #ffcb05;
+    --accent-gold: #eab308;
+    
+    /* Fine Art Brand Ribbon */
+    --brand-gradient-tri: linear-gradient(90deg, #16a34a 0%, #f97316 50%, #ffcb05 100%);
+    --brand-navy: #080d1a;
 }
 
 /* Primary Greenish Accent Classes */
@@ -26,6 +41,25 @@
     border-color: #16a34a !important;
 }
 
+/* Vibrant Orange Accent Classes (Fine Art Integration) */
+.color-orange,
+.orange-color {
+    color: #f97316 !important;
+}
+
+.bg-orange,
+.orange-bg {
+    background-color: #f97316 !important;
+}
+
+.bg-orange-gradient {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+}
+
+.border-orange {
+    border-color: #f97316 !important;
+}
+
 /* Button & Hover Highlights */
 .btn-theme {
     background-color: #16a34a;
@@ -39,4 +73,22 @@
     border-color: #15803d;
     color: #ffffff;
 }
+
+.btn-orange {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    border-color: #ea580c !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+    background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%) !important;
+    border-color: #c2410c !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 18px rgba(249, 115, 22, 0.55);
+    transform: translateY(-2px);
+}
+
 

@@ -35,6 +35,7 @@ const pages = [
   { file: 'team.html', active: 'team.html' },
   { file: 'news.html', active: 'news.html' },
   { file: 'news-detail.html', active: 'news.html' },
+  { file: 'gallery.html', active: 'gallery.html' },
   { file: 'contact.html', active: 'contact.html' }
 ];
 

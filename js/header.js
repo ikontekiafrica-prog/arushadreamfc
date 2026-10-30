@@ -13,6 +13,7 @@
 '     Edit here (or in js/header.js) to update all pages simultaneously.\n' +
 '================================================================== -->\n' +
 '<header id="site-header-inner">\n' +
+'   <div class="brand-tricolor-ribbon"></div>\n' +
 '   <div class="container">\n' +
 '      <div class="header-top">\n' +
 '         <div class="row">\n' +
@@ -115,6 +116,7 @@
 '                                       </li>\n' +
 '                                    </ul>\n' +
 '                                 </li>\n' +
+'                                 <li><a href="gallery.html">Gallery</a></li>\n' +
 '                                 <li><a href="contact.html">Contact</a></li>\n' +
 '                              </ul>\n' +
 '                           </div>\n' +
@@ -171,6 +173,79 @@
     });
   }
 
+  function setupDropdownBehavior() {
+    var header = document.querySelector('header#site-header-inner') || document.querySelector('header');
+    if (!header) return;
+
+    var dropdowns = header.querySelectorAll('.dropdown');
+    dropdowns.forEach(function (dd) {
+      // Mouseenter (Hover support across all devices)
+      dd.addEventListener('mouseenter', function () {
+        dd.classList.add('open');
+        var menu = dd.querySelector('.dropdown-menu');
+        if (menu) menu.style.display = 'block';
+      });
+
+      // Mouseleave (Hover exit)
+      dd.addEventListener('mouseleave', function () {
+        dd.classList.remove('open');
+        var menu = dd.querySelector('.dropdown-menu');
+        if (menu) menu.style.display = '';
+      });
+
+      // Click / Tap Toggle (for small screens, mobile & tablets)
+      var toggle = dd.querySelector('.dropdown-toggle');
+      if (toggle) {
+        toggle.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          var isOpen = dd.classList.contains('open');
+          var menu = dd.querySelector('.dropdown-menu');
+          if (isOpen) {
+            dd.classList.remove('open');
+            if (menu) menu.style.display = '';
+          } else {
+            dd.classList.add('open');
+            if (menu) menu.style.display = 'block';
+          }
+        });
+      }
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest || !e.target.closest('.dropdown')) {
+        dropdowns.forEach(function (dd) {
+          dd.classList.remove('open');
+          var menu = dd.querySelector('.dropdown-menu');
+          if (menu) menu.style.display = '';
+        });
+      }
+    });
+  }
+
+  function setupMobileMenu() {
+    var header = document.querySelector('header#site-header-inner') || document.querySelector('header');
+    if (!header) return;
+
+    var toggleBtn = header.querySelector('.navbar-toggle');
+    var navCollapse = header.querySelector('.navbar-collapse');
+
+    if (toggleBtn && navCollapse) {
+      toggleBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var isOpen = navCollapse.classList.contains('in');
+        if (isOpen) {
+          navCollapse.classList.remove('in');
+          navCollapse.style.display = 'none';
+        } else {
+          navCollapse.classList.add('in');
+          navCollapse.style.display = 'block';
+        }
+      });
+    }
+  }
+
   function renderHeader() {
     var existingHeader = document.querySelector('header#site-header-inner');
     if (!existingHeader) {
@@ -188,6 +263,8 @@
     }
     highlightActive();
     setupStickyHeader();
+    setupDropdownBehavior();
+    setupMobileMenu();
   }
 
   if (document.readyState === 'loading') {
