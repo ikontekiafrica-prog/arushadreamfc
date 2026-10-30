@@ -137,10 +137,11 @@
 '      </div>\n' +
 '   </div>\n' +
 '</header>\n' +
+'\n' +
 '\n';
 
   function highlightActive() {
-    var rawPath = window.location.pathname.split('/').pop() || 'index.html';
+    var rawPath = (window.location.pathname.split('/').pop() || 'index.html').split('?')[0].split('#')[0];
     if (rawPath === '' || rawPath === '/') rawPath = 'index.html';
 
     var links = document.querySelectorAll('#site-header-inner .nav.navbar-nav > li > a');
@@ -148,7 +149,7 @@
       var href = link.getAttribute('href');
       var li = link.parentElement;
       if (!li.classList.contains('dropdown')) {
-        if (href === rawPath) {
+        if (href === rawPath || (rawPath === 'news-detail.html' && href === 'news.html')) {
           li.classList.add('active');
         } else {
           li.classList.remove('active');
@@ -171,15 +172,18 @@
   }
 
   function renderHeader() {
-    var target = document.getElementById('site-header');
-    if (target) {
-      target.outerHTML = masterHeaderHTML;
-    } else {
-      var headerOld = document.querySelector('header');
-      if (headerOld) {
-        headerOld.outerHTML = masterHeaderHTML;
+    var existingHeader = document.querySelector('header#site-header-inner');
+    if (!existingHeader) {
+      var target = document.getElementById('site-header');
+      if (target) {
+        target.outerHTML = masterHeaderHTML;
       } else {
-        document.write(masterHeaderHTML);
+        var headerOld = document.querySelector('header');
+        if (headerOld) {
+          headerOld.outerHTML = masterHeaderHTML;
+        } else {
+          document.write(masterHeaderHTML);
+        }
       }
     }
     highlightActive();

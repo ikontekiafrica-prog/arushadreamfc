@@ -1,7 +1,9 @@
 const fs = require('fs');
+const path = require('path');
 
-const headerHtmlPath = 'd:/my-workshop/projects/arushadreamfc/header.html';
-const headerJsPath = 'd:/my-workshop/projects/arushadreamfc/js/header.js';
+const root = 'd:/my-workshop/projects/arushadreamfc';
+const headerHtmlPath = path.join(root, 'header.html');
+const headerJsPath = path.join(root, 'js/header.js');
 
 if (!fs.existsSync(headerHtmlPath)) {
   console.error('header.html not found!');
@@ -10,9 +12,8 @@ if (!fs.existsSync(headerHtmlPath)) {
 
 const htmlContent = fs.readFileSync(headerHtmlPath, 'utf8');
 
+// 1. Sync into js/header.js
 let jsContent = fs.readFileSync(headerJsPath, 'utf8');
-
-// Convert html content to escaped JS string lines
 const escapedLines = htmlContent.split('\n').map(line => {
   const escaped = line.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\r/g, '');
   return "'" + escaped + "\\n'";
@@ -24,7 +25,40 @@ const replacement = 'var masterHeaderHTML = \n' + escapedLines + ';\n\n  functio
 if (regex.test(jsContent)) {
   jsContent = jsContent.replace(regex, replacement);
   fs.writeFileSync(headerJsPath, jsContent, 'utf8');
-  console.log('Successfully synchronized header.html -> js/header.js');
-} else {
-  console.error('Could not find masterHeaderHTML block in js/header.js');
+  console.log('✓ Synchronized header.html -> js/header.js');
 }
+
+// 2. Sync into all HTML pages directly
+const pages = [
+  { file: 'index.html', active: 'index.html' },
+  { file: 'about.html', active: 'about.html' },
+  { file: 'team.html', active: 'team.html' },
+  { file: 'news.html', active: 'news.html' },
+  { file: 'news-detail.html', active: 'news.html' },
+  { file: 'contact.html', active: 'contact.html' }
+];
+
+pages.forEach(p => {
+  const filePath = path.join(root, p.file);
+  if (!fs.existsSync(filePath)) return;
+
+  let pageHtml = fs.readFileSync(filePath, 'utf8');
+
+  let customHeader = htmlContent;
+  customHeader = customHeader.replace(/<li class="active"><a href="[^"]+">/g, (m) => m.replace('class="active"', ''));
+  customHeader = customHeader.replace(
+    new RegExp('<li><a href="' + p.active + '">'),
+    '<li class="active"><a href="' + p.active + '">'
+  );
+
+  const blockToInject = customHeader + '\n         <script src="js/header.js"></script>';
+  const targetRegex = /(?:<div id="site-header"><\/div>\s*<script src="js\/header\.js"><\/script>|<header id="site-header-inner">[\s\S]*?<\/header>(?:\s*<script src="js\/header\.js"><\/script>)?)/;
+
+  if (targetRegex.test(pageHtml)) {
+    pageHtml = pageHtml.replace(targetRegex, blockToInject);
+    fs.writeFileSync(filePath, pageHtml, 'utf8');
+    console.log('✓ Synchronized header.html -> ' + p.file);
+  }
+});
+
+console.log('Master Global Header synchronization complete!');

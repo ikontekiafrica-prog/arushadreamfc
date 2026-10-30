@@ -265,13 +265,14 @@ $(document).ready(function(){
          $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
          
          //Initialize carousel 
-         $myCarousel.carousel();
-         
-         //Animate captions in first slide on page load 
-         doAnimations($firstAnimatingElems);
-         
-         //Pause carousel  
-         $myCarousel.carousel('pause');
+         $myCarousel.carousel({
+              interval: 10000,
+              pause: 'hover',
+              wrap: true
+          });
+          
+          //Animate captions in first slide on page load 
+          doAnimations($firstAnimatingElems);
          
          
          //Other slides to be animated on carousel slide event 
