@@ -232,8 +232,12 @@
     var navCollapse = header.querySelector('.navbar-collapse');
 
     if (toggleBtn && navCollapse) {
-      toggleBtn.addEventListener('click', function (e) {
-        e.preventDefault();
+      toggleBtn.removeAttribute('data-toggle');
+      toggleBtn.onclick = function (e) {
+        if (e) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
         var isOpen = navCollapse.classList.contains('in');
         if (isOpen) {
           navCollapse.classList.remove('in');
@@ -242,7 +246,7 @@
           navCollapse.classList.add('in');
           navCollapse.style.display = 'block';
         }
-      });
+      };
     }
   }
 
@@ -268,8 +272,8 @@
   }
 
   if (document.readyState === 'loading') {
-    var target = document.getElementById('site-header');
-    if (target) {
+    var existing = document.querySelector('header#site-header-inner');
+    if (existing) {
       renderHeader();
     } else {
       document.addEventListener('DOMContentLoaded', renderHeader);
