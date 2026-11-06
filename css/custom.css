@@ -394,17 +394,26 @@ header#site-header-inner {
      color: #16a34a;
 }
 /** search bar **/
- .stylish-input-group .form-control{
-     border-right:0;
-     box-shadow:0 0 0;
-     border-color:#ccc;
+ .stylish-input-group .form-control {
+     border-right: 0;
+     box-shadow: none;
+     border-color: #16a34a;
 }
- .stylish-input-group button{
-     border:0;
-     background:transparent;
+ .stylish-input-group button {
+     border: 0;
+     background: transparent;
+     color: #ffffff;
+     cursor: pointer;
+}
+ .stylish-input-group button:focus,
+ .stylish-input-group button:hover {
+     outline: none;
+     color: #ffcb05;
 }
  .search-bar {
      float: right;
+     width: 30%;
+     padding: 10px;
 }
  #imaginary_container {
      float: left;
@@ -413,21 +422,28 @@ header#site-header-inner {
  #imaginary_container input.form-control {
      float: left;
      width: 100%;
-     border: none;
-     padding: 12px 21px 12px;
-     min-height: auto;
-     height: auto;
-     border-radius: 0;
-     font-style: italic;
-     font-weight: 300;
-     font-size: 18px;
-     background: ;
-     border: solid #16a34a 2px;
+     border: 2px solid #16a34a !important;
+     padding: 10px 18px !important;
+     min-height: 48px;
+     height: 48px;
+     border-radius: 0 !important;
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     background: #ffffff !important;
+     color: #111111 !important;
+     box-shadow: none !important;
 }
- .search-bar {
-     float: right;
-     width: 30%;
-     padding: 10px;
+ #imaginary_container input.form-control:focus {
+     border-color: #15803d !important;
+     outline: none !important;
+     box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.25) !important;
+     background: #ffffff !important;
+     color: #111111 !important;
+}
+ #imaginary_container input.form-control::placeholder {
+     color: #64748b;
+     font-style: normal;
 }
  .news {
      float: left;
@@ -617,14 +633,21 @@ header#site-header-inner {
 }
 /** end search bar **/
  div.menu div.search-bar .input-group-addon {
-     background: #16a34a;
-     border: none;
-     border-radius: 0;
-     color: #fff;
-     font-size: 20px;
-     height: auto;
-     padding: 14px 16px;
-}
+     background: #16a34a !important;
+     border: 2px solid #16a34a !important;
+     border-left: none !important;
+     border-radius: 0 !important;
+     color: #ffffff !important;
+     font-size: 18px;
+     height: 48px;
+     padding: 0 16px;
+     vertical-align: middle;
+     transition: background 0.2s ease;
+ }
+ div.menu div.search-bar .input-group-addon:hover {
+     background: #15803d !important;
+     border-color: #15803d !important;
+ }
  footer#footer {
      min-height: auto;
      background: #111;
@@ -881,7 +904,7 @@ header#site-header-inner {
      width: 100%;
      position: relative;
      height: 100%;
-     background: orange;
+     background: #0f172a;
      top: 0;
      left: 0;
      min-height: 350px;
@@ -2214,7 +2237,7 @@ body section#contant .post-info span h4 {
         text-align: center !important;
         background: rgba(10, 16, 26, 0.72) !important;
         border: 1px solid rgba(255, 255, 255, 0.16) !important;
-        border-top: 3.5px solid #f97316 !important;
+        border-top: 3.5px solid #16a34a !important;
         border-left: none !important;
         border-radius: 0;
         backdrop-filter: blur(10px) !important;
@@ -2802,12 +2825,11 @@ header.header-fixed-scrolled .menu {
 
 
 /* ==================================================================
-   FINE ART BRAND ORANGE INTEGRATION
-   Harmonizing Athletic Green (#16a34a), Energetic Orange (#f97316 / #ea580c),
-   Summit Gold (#ffcb05), and Midnight Stadium Navy (#080d1a)
+   UNIFIED ATHLETIC GREEN & SUMMIT GOLD BRAND THEME
+   Primary Green (#16a34a), Summit Gold (#ffcb05), Stadium Navy (#0f172a)
 ================================================================== */
 
-/* 1. Header Top Signature Tricolor Ribbon */
+/* 1. Header Top Signature Ribbon */
 .brand-tricolor-ribbon {
     width: 100%;
     height: 3.5px;
@@ -2828,7 +2850,7 @@ header#site-header-inner.header-fixed-scrolled::before {
     z-index: 100000;
 }
 
-/* 2. Header Top CTA Balance: Green Support + Fine Art Orange Join Free */
+/* 2. Header Top Action Buttons */
 .right_top_section .login li.login-modal a.login {
     background: #16a34a !important;
     color: #ffffff !important;
@@ -2848,31 +2870,32 @@ header#site-header-inner.header-fixed-scrolled::before {
     color: #ffffff !important;
     font-size: 13px;
     font-weight: 600;
-    background: #f97316 !important;
+    background: #0f172a !important;
     border-radius: 0;
     float: left;
-    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.35);
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.25);
 }
 .right_top_section .login li .cart-option a:hover,
 .right_top_section .login li .cart-option a:focus {
-    background: #ea580c !important;
-    box-shadow: 0 6px 18px rgba(249, 115, 22, 0.55);
+    background: #1e293b !important;
+    color: #ffcb05 !important;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.5);
     transform: translateY(-1px);
-    color: #ffffff !important;
 }
 
-/* 3. Hero Carousel Fine Art Accents */
-.color-orange {
-    color: #f97316 !important;
+/* 3. Hero Carousel & Card Highlights */
+.color-orange,
+.color-yellow {
+    color: #ffcb05 !important;
     font-weight: 700;
 }
 
-/* Hero Frosted Glass Card Tricolor Top Glow Accent */
+/* Hero Frosted Glass Card Border Accent */
 .slider-contant {
     position: relative;
-    border-left: 4px solid #f97316 !important;
+    border-left: 4px solid #ffcb05 !important;
 }
 .slider-contant::before {
     content: "";
@@ -2885,53 +2908,18 @@ header#site-header-inner.header-fixed-scrolled::before {
     border-radius: 0;
 }
 
-/* Fine Art Orange Button */
-.btn-orange,
-.btn,
-.button,
-.form-control,
-.program-card,
-.donation-tier-card,
-.pathway-step,
-.payment-channel-box,
-.custom-form-container,
-.btn.btn-orange,
-.btn,
-.button,
-.form-control,
-.program-card,
-.donation-tier-card,
-.pathway-step,
-.payment-channel-box,
-.custom-form-container,
-.btn.btn-primary.btn-orange {
-    background: #f97316 !important;
-    border-color: #ea580c !important;
-    color: #ffffff !important;
-    box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4) !important;
-    transition: all 0.3s ease;
-}
-.btn-orange:hover,
-.btn.btn-orange:hover,
-.btn.btn-primary.btn-orange:hover {
-    background: #ea580c !important;
-    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.6) !important;
-    transform: translateY(-2px);
-    color: #ffffff !important;
-}
-
-/* Carousel Active Indicator Tricolor Art */
+/* Carousel Active Indicator */
 .full-slider .carousel-indicators li.active {
-    background: #f97316 !important;
+    background: #16a34a !important;
     border-color: transparent !important;
-    box-shadow: 0 0 10px rgba(249, 115, 22, 0.6);
+    box-shadow: 0 0 10px rgba(22, 163, 74, 0.6);
 }
 
-/* 4. Top Headlines Ticker with Fine Art Orange Badge */
+/* 4. Top Headlines Ticker */
 .heading-slider p.headline {
-    background: #f97316 !important;
+    background: #16a34a !important;
     color: #ffffff !important;
-    box-shadow: 0 2px 10px rgba(249, 115, 22, 0.35) !important;
+    box-shadow: 0 2px 10px rgba(22, 163, 74, 0.35) !important;
     border-radius: 0;
     font-weight: 700;
 }
@@ -2939,28 +2927,63 @@ header#site-header-inner.header-fixed-scrolled::before {
     color: #ffcb05 !important;
 }
 
-/* 5. Match Day "VS" Crest and Countdown Fixtures */
-.team-btw-match li.vs span {
-    background: #f97316 !important;
+/* 5. Team Fixtures High-Contrast "VS" Badges */
+/* Sidebar & Listing Match Fixtures: dark navy badge + white text = 100% visible */
+aside#sidebar .team-btw-match ul li.vs span,
+.feature-matchs .team-btw-match ul li.vs span,
+.team-btw-match ul li.vs span {
+    background: #0f172a !important;
     color: #ffffff !important;
-    box-shadow: 0 0 14px rgba(249, 115, 22, 0.6) !important;
-    border: 2px solid rgba(255, 255, 255, 0.4);
+    font-weight: 800 !important;
+    font-size: 13px !important;
+    text-transform: uppercase;
+    width: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    line-height: 32px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+    margin: 0 auto !important;
 }
+
+/* Hero Next Match Crest */
+.matchs-vs .team-btw-match li.vs span {
+    background: #0f172a !important;
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    font-size: 16px !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    line-height: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 2px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35) !important;
+    border-radius: 0 !important;
+}
+
+/* Match Countdown Timer */
 .right-match-time ul.countdown li {
     background: rgba(15, 23, 42, 0.85) !important;
-    border: 1px solid rgba(249, 115, 22, 0.35) !important;
-    border-top: 3px solid #f97316 !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-top: 3px solid #ffcb05 !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 .right-match-time ul.countdown li span {
-    color: #f97316 !important;
+    color: #ffcb05 !important;
     font-weight: 800;
-    text-shadow: 0 0 10px rgba(249, 115, 22, 0.4);
+    text-shadow: 0 0 10px rgba(255, 203, 5, 0.4);
 }
 
 /* 6. News Post Detail Date Pills */
 .news-post-detail .date {
-    background: #f97316 !important;
+    background: #16a34a !important;
     color: #ffffff !important;
     font-size: 11px !important;
     font-weight: 700 !important;
@@ -2970,59 +2993,61 @@ header#site-header-inner.header-fixed-scrolled::before {
     border-radius: 0;
     display: inline-block !important;
     margin-bottom: 8px !important;
-    box-shadow: 0 2px 6px rgba(249, 115, 22, 0.3) !important;
+    box-shadow: 0 2px 6px rgba(22, 163, 74, 0.3) !important;
 }
 .news-post-widget {
     border-bottom: 3px solid transparent;
     transition: all 0.3s ease;
 }
 .news-post-widget:hover {
-    border-bottom: 3px solid #f97316;
-    box-shadow: 0 10px 25px rgba(249, 115, 22, 0.12);
+    border-bottom: 3px solid #16a34a;
+    box-shadow: 0 10px 25px rgba(22, 163, 74, 0.12);
 }
 
-/* 7. Gallery Page Grassroots Badges & Alternating Metric Rhythm */
+/* 7. Gallery Filters & Badges */
 .gallery-filter-btn[data-filter=".cat-grassroots"]:hover,
-.gallery-filter-btn[data-filter=".cat-grassroots"].active {
-    background: #f97316 !important;
+.gallery-filter-btn[data-filter=".cat-grassroots"].active,
+.gallery-filter-btn:hover,
+.gallery-filter-btn.active {
+    background: #16a34a !important;
     color: #ffffff !important;
-    box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4) !important;
+    box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4) !important;
 }
 .gallery-col.cat-grassroots .gallery-badge {
-    background: #f97316 !important;
+    background: #16a34a !important;
     color: #ffffff !important;
-    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.35);
+    box-shadow: 0 2px 8px rgba(22, 163, 74, 0.35);
 }
 .gallery-col.cat-grassroots .gallery-zoom-icon:hover {
-    background: #ea580c !important;
+    background: #15803d !important;
 }
 .gallery-stat-item:nth-child(2) .gallery-stat-num {
-    color: #f97316 !important;
+    color: #ffcb05 !important;
 }
 .gallery-stat-item:nth-child(4) .gallery-stat-num {
-    color: #ea580c !important;
+    color: #16a34a !important;
 }
 
-/* 8. Team Youth / Grassroots Coach Badges */
+/* 8. Team Badges */
 #team-slider .col-md-3:nth-child(3) .player-number {
-    background: #f97316 !important;
+    background: #16a34a !important;
 }
 #team-slider .col-md-3:nth-child(3) .desination-2 {
-    background: #ea580c !important;
+    background: #15803d !important;
 }
 #team-slider .col-md-3:nth-child(3) .desination-2::before {
-    border-bottom-color: #ea580c !important;
+    border-bottom-color: #15803d !important;
 }
 
-/* 9. Back to Top Smooth Athletic Gradient */
+/* 9. Back to Top Button */
 .dmtop {
     background: #16a34a !important;
-    box-shadow: 0 4px 16px rgba(249, 115, 22, 0.4) !important;
+    box-shadow: 0 4px 16px rgba(22, 163, 74, 0.4) !important;
     transition: all 0.3s ease;
 }
 .dmtop:hover {
-    background: #f97316 !important;
-    box-shadow: 0 6px 22px rgba(249, 115, 22, 0.6) !important;
+    background: #15803d !important;
+    box-shadow: 0 6px 22px rgba(22, 163, 74, 0.6) !important;
     transform: translateY(-3px);
 }
 
@@ -3030,11 +3055,12 @@ header#site-header-inner.header-fixed-scrolled::before {
 .kode-form-list li i,
 .address-list li i,
 .footer-contact-info li i {
-    color: #f97316 !important;
+    color: #16a34a !important;
 }
 .icon-list li i {
-    color: #f97316 !important;
+    color: #16a34a !important;
     font-weight: bold;
+}
 }
 
 
@@ -3089,10 +3115,10 @@ header#site-header-inner.header-fixed-scrolled::before {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 .program-card.featured {
-    border-top: 4px solid #f97316;
+    border-top: 4px solid #16a34a;
 }
 .program-card.featured:hover {
-    border-color: #f97316;
+    border-color: #16a34a;
 }
 .program-card-header {
     padding: 20px 20px 10px 20px;
@@ -3114,7 +3140,7 @@ header#site-header-inner.header-fixed-scrolled::before {
     color: #ffffff;
 }
 .program-badge.accent {
-    background: #f97316;
+    background: #0f172a;
     color: #ffffff;
 }
 .program-card h3 {
@@ -3126,7 +3152,7 @@ header#site-header-inner.header-fixed-scrolled::before {
 .program-card p.age-range {
     font-size: 13px;
     font-weight: 600;
-    color: #f97316;
+    color: #16a34a;
     margin-bottom: 5px;
 }
 .program-card-body {
@@ -3197,8 +3223,8 @@ header#site-header-inner.header-fixed-scrolled::before {
     border-top: 3px solid #ccc;
 }
 .donation-tier-card:hover {
-    border-color: #f97316;
-    border-top-color: #f97316;
+    border-color: #16a34a;
+    border-top-color: #16a34a;
 }
 .donation-tier-card.highlight {
     border-top-color: #16a34a;
@@ -3231,7 +3257,7 @@ header#site-header-inner.header-fixed-scrolled::before {
     width: 100%;
     margin-top: 15px;
     padding: 10px;
-    background: #f97316;
+    background: #16a34a;
     color: #ffffff !important;
     font-weight: 700;
     text-transform: uppercase;
@@ -3241,7 +3267,7 @@ header#site-header-inner.header-fixed-scrolled::before {
     text-align: center;
 }
 .donation-btn:hover {
-    background: #ea580c;
+    background: #15803d;
     color: #ffffff !important;
 }
 

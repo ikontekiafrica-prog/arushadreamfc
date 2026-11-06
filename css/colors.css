@@ -10,22 +10,17 @@
     --primary-dark: #14532d;
     --primary-light: #22c55e;
     
-    /* Energetic Grassroots Orange */
-    --accent-orange: #f97316;
-    --accent-orange-hover: #ea580c;
-    --accent-orange-dark: #c2410c;
-    --accent-orange-light: #fb923c;
-    
     /* Golden Glory Accent */
     --accent-yellow: #ffcb05;
     --accent-gold: #eab308;
     
-    /* Brand Ribbon & Stadium Navy */
-    --brand-ribbon-color: #16a34a;
+    /* Brand Navy & Deep Charcoal */
     --brand-navy: #080d1a;
+    --brand-dark: #0f172a;
+    --brand-ribbon-color: #16a34a;
 }
 
-/* Primary Greenish Accent Classes */
+/* Primary Athletic Green Classes */
 .theme-color,
 .th-color {
     color: #16a34a !important;
@@ -40,48 +35,36 @@
     border-color: #16a34a !important;
 }
 
-/* Vibrant Orange Accent Classes */
+/* Golden Accent Classes */
+.color-yellow,
 .color-orange,
 .orange-color {
-    color: #f97316 !important;
+    color: #ffcb05 !important;
 }
 
+.bg-yellow,
 .bg-orange,
 .orange-bg {
-    background-color: #f97316 !important;
+    background-color: #16a34a !important;
 }
 
 .border-orange {
-    border-color: #f97316 !important;
+    border-color: #16a34a !important;
 }
 
 /* Button & Hover Highlights */
-.btn-theme {
-    background-color: #16a34a;
-    border-color: #16a34a;
-    color: #ffffff;
+.btn-theme,
+.btn-orange {
+    background-color: #16a34a !important;
+    border-color: #16a34a !important;
+    color: #ffffff !important;
 }
 
 .btn-theme:hover,
-.btn-theme:focus {
-    background-color: #15803d;
-    border-color: #15803d;
-    color: #ffffff;
-}
-
-.btn-orange {
-    background: #f97316 !important;
-    border-color: #f97316 !important;
-    color: #ffffff !important;
-    box-shadow: 0 4px 14px rgba(249, 115, 22, 0.3);
-    transition: all 0.3s ease;
-}
-
+.btn-theme:focus,
 .btn-orange:hover,
 .btn-orange:focus {
-    background: #ea580c !important;
-    border-color: #ea580c !important;
+    background-color: #15803d !important;
+    border-color: #15803d !important;
     color: #ffffff !important;
-    box-shadow: 0 6px 18px rgba(249, 115, 22, 0.45);
-    transform: translateY(-2px);
 }
