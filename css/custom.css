@@ -3136,10 +3136,12 @@ header#site-header-inner.header-fixed-scrolled::before {
     line-height: 1.6;
 }
 .program-card-body ul li::before {
-    content: "⚽";
+    content: "\f1e3";
+    font-family: FontAwesome;
     position: absolute;
     left: 0;
     font-size: 11px;
+    color: #16a34a;
 }
 
 /* 6-Stage Pathway Step Cards */

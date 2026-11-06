@@ -102,12 +102,12 @@
 '                                       <li class="col-sm-4">\n' +
 '                                          <ul class="menu-inner">\n' +
 '                                             <li class="dropdown-header"><a href="programs.html" style="color: inherit; text-decoration: none;">All Programs Overview</a></li>\n' +
-'                                             <li><a href="programs.html#u8">U6 – U8 Grassroots</a></li>\n' +
-'                                             <li><a href="programs.html#u11">U9 – U11 Ball Mastery</a></li>\n' +
-'                                             <li><a href="programs.html#u13">U12 – U13 Technique</a></li>\n' +
-'                                             <li><a href="programs.html#u15">U14 – U15 Tactics & Speed</a></li>\n' +
-'                                             <li><a href="programs.html#u17">U16 – U17 Competition</a></li>\n' +
-'                                             <li><a href="programs.html#u20">U18 – U20 Elite Squad</a></li>\n' +
+'                                             <li><a href="programs.html#u8">U6 - U8 Grassroots</a></li>\n' +
+'                                             <li><a href="programs.html#u11">U9 - U11 Ball Mastery</a></li>\n' +
+'                                             <li><a href="programs.html#u13">U12 - U13 Technique</a></li>\n' +
+'                                             <li><a href="programs.html#u15">U14 - U15 Tactics & Speed</a></li>\n' +
+'                                             <li><a href="programs.html#u17">U16 - U17 Competition</a></li>\n' +
+'                                             <li><a href="programs.html#u20">U18 - U20 Elite Squad</a></li>\n' +
 '                                             <li><a href="programs.html#girls">Girls\' & Women\'s Football</a></li>\n' +
 '                                             <li><a href="safeguarding.html">Child Safeguarding</a></li>\n' +
 '                                          </ul>\n' +
