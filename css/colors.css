@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------
     File Name: colors.css
-    Description: Arusha Dream Football Centre Theme Colors (Greenish & Vibrant Orange Theme)
+    Description: Arusha Dream Football Centre Theme Colors (Pure Solid Athletic Colors - No Gradients)
 -------------------------------------------------------------------*/
 
 :root {
@@ -15,14 +15,13 @@
     --accent-orange-hover: #ea580c;
     --accent-orange-dark: #c2410c;
     --accent-orange-light: #fb923c;
-    --accent-orange-gradient: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
     
     /* Golden Glory Accent */
     --accent-yellow: #ffcb05;
     --accent-gold: #eab308;
     
-    /* Fine Art Brand Ribbon */
-    --brand-gradient-tri: linear-gradient(90deg, #16a34a 0%, #f97316 50%, #ffcb05 100%);
+    /* Brand Ribbon & Stadium Navy */
+    --brand-ribbon-color: #16a34a;
     --brand-navy: #080d1a;
 }
 
@@ -41,7 +40,7 @@
     border-color: #16a34a !important;
 }
 
-/* Vibrant Orange Accent Classes (Fine Art Integration) */
+/* Vibrant Orange Accent Classes */
 .color-orange,
 .orange-color {
     color: #f97316 !important;
@@ -50,10 +49,6 @@
 .bg-orange,
 .orange-bg {
     background-color: #f97316 !important;
-}
-
-.bg-orange-gradient {
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
 }
 
 .border-orange {
@@ -75,20 +70,18 @@
 }
 
 .btn-orange {
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
-    border-color: #ea580c !important;
+    background: #f97316 !important;
+    border-color: #f97316 !important;
     color: #ffffff !important;
-    box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4);
+    box-shadow: 0 4px 14px rgba(249, 115, 22, 0.3);
     transition: all 0.3s ease;
 }
 
 .btn-orange:hover,
 .btn-orange:focus {
-    background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%) !important;
-    border-color: #c2410c !important;
+    background: #ea580c !important;
+    border-color: #ea580c !important;
     color: #ffffff !important;
-    box-shadow: 0 6px 18px rgba(249, 115, 22, 0.55);
+    box-shadow: 0 6px 18px rgba(249, 115, 22, 0.45);
     transform: translateY(-2px);
 }
-
-

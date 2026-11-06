@@ -2096,7 +2096,7 @@ body section#contant .post-info span h4 {
     width: 100%;
     height: 100%;
     /* Black gradient overlay: soft 45% black on left, deepening to 82% black on right behind text */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.62) 42%, rgba(0, 0, 0, 0.85) 100%);
+    background: rgba(0, 0, 0, 0.65);
     z-index: 1;
     pointer-events: none;
 }
@@ -2679,7 +2679,7 @@ header.header-fixed-scrolled .menu {
 .gallery-card-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(10, 16, 26, 0.92) 0%, rgba(10, 16, 26, 0.45) 50%, rgba(10, 16, 26, 0.1) 100%);
+    background: rgba(10, 16, 26, 0.85);
     opacity: 0;
     transition: opacity 0.3s ease;
     display: flex;
@@ -2783,7 +2783,7 @@ header.header-fixed-scrolled .menu {
     }
     .gallery-card-overlay {
         opacity: 1;
-        background: linear-gradient(to top, rgba(10, 16, 26, 0.94) 0%, rgba(10, 16, 26, 0.5) 60%, rgba(10, 16, 26, 0.1) 100%);
+        background: rgba(10, 16, 26, 0.85);
     }
     .gallery-stat-item {
         margin-bottom: 15px;
@@ -2802,7 +2802,7 @@ header.header-fixed-scrolled .menu {
 .brand-tricolor-ribbon {
     width: 100%;
     height: 3.5px;
-    background: linear-gradient(90deg, #16a34a 0%, #f97316 50%, #ffcb05 100%);
+    background: #16a34a;
     position: relative;
     z-index: 1002;
 }
@@ -2815,7 +2815,7 @@ header#site-header-inner.header-fixed-scrolled::before {
     left: 0;
     width: 100%;
     height: 3.5px;
-    background: linear-gradient(90deg, #16a34a 0%, #f97316 50%, #ffcb05 100%);
+    background: #16a34a;
     z-index: 100000;
 }
 
@@ -2839,7 +2839,7 @@ header#site-header-inner.header-fixed-scrolled::before {
     color: #ffffff !important;
     font-size: 13px;
     font-weight: 600;
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    background: #f97316 !important;
     border-radius: 50px;
     float: left;
     box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
@@ -2848,7 +2848,7 @@ header#site-header-inner.header-fixed-scrolled::before {
 }
 .right_top_section .login li .cart-option a:hover,
 .right_top_section .login li .cart-option a:focus {
-    background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%) !important;
+    background: #ea580c !important;
     box-shadow: 0 6px 18px rgba(249, 115, 22, 0.55);
     transform: translateY(-1px);
     color: #ffffff !important;
@@ -2872,7 +2872,7 @@ header#site-header-inner.header-fixed-scrolled::before {
     left: 0;
     right: 0;
     height: 3.5px;
-    background: linear-gradient(90deg, #16a34a 0%, #f97316 50%, #ffcb05 100%);
+    background: #16a34a;
     border-radius: 8px 8px 0 0;
 }
 
@@ -2880,7 +2880,7 @@ header#site-header-inner.header-fixed-scrolled::before {
 .btn-orange,
 .btn.btn-orange,
 .btn.btn-primary.btn-orange {
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    background: #f97316 !important;
     border-color: #ea580c !important;
     color: #ffffff !important;
     box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4) !important;
@@ -2889,7 +2889,7 @@ header#site-header-inner.header-fixed-scrolled::before {
 .btn-orange:hover,
 .btn.btn-orange:hover,
 .btn.btn-primary.btn-orange:hover {
-    background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%) !important;
+    background: #ea580c !important;
     box-shadow: 0 6px 20px rgba(249, 115, 22, 0.6) !important;
     transform: translateY(-2px);
     color: #ffffff !important;
@@ -2897,14 +2897,14 @@ header#site-header-inner.header-fixed-scrolled::before {
 
 /* Carousel Active Indicator Tricolor Art */
 .full-slider .carousel-indicators li.active {
-    background: linear-gradient(90deg, #f97316, #ffcb05) !important;
+    background: #f97316 !important;
     border-color: transparent !important;
     box-shadow: 0 0 10px rgba(249, 115, 22, 0.6);
 }
 
 /* 4. Top Headlines Ticker with Fine Art Orange Badge */
 .heading-slider p.headline {
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    background: #f97316 !important;
     color: #ffffff !important;
     box-shadow: 0 2px 10px rgba(249, 115, 22, 0.35) !important;
     border-radius: 4px;
@@ -2916,7 +2916,7 @@ header#site-header-inner.header-fixed-scrolled::before {
 
 /* 5. Match Day "VS" Crest and Countdown Fixtures */
 .team-btw-match li.vs span {
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    background: #f97316 !important;
     color: #ffffff !important;
     box-shadow: 0 0 14px rgba(249, 115, 22, 0.6) !important;
     border: 2px solid rgba(255, 255, 255, 0.4);
@@ -2935,7 +2935,7 @@ header#site-header-inner.header-fixed-scrolled::before {
 
 /* 6. News Post Detail Date Pills */
 .news-post-detail .date {
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    background: #f97316 !important;
     color: #ffffff !important;
     font-size: 11px !important;
     font-weight: 700 !important;
@@ -2959,12 +2959,12 @@ header#site-header-inner.header-fixed-scrolled::before {
 /* 7. Gallery Page Grassroots Badges & Alternating Metric Rhythm */
 .gallery-filter-btn[data-filter=".cat-grassroots"]:hover,
 .gallery-filter-btn[data-filter=".cat-grassroots"].active {
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    background: #f97316 !important;
     color: #ffffff !important;
     box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4) !important;
 }
 .gallery-col.cat-grassroots .gallery-badge {
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    background: #f97316 !important;
     color: #ffffff !important;
     box-shadow: 0 2px 8px rgba(249, 115, 22, 0.35);
 }
@@ -2980,7 +2980,7 @@ header#site-header-inner.header-fixed-scrolled::before {
 
 /* 8. Team Youth / Grassroots Coach Badges */
 #team-slider .col-md-3:nth-child(3) .player-number {
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    background: #f97316 !important;
 }
 #team-slider .col-md-3:nth-child(3) .desination-2 {
     background: #ea580c !important;
@@ -2991,12 +2991,12 @@ header#site-header-inner.header-fixed-scrolled::before {
 
 /* 9. Back to Top Smooth Athletic Gradient */
 .dmtop {
-    background: linear-gradient(135deg, #16a34a 0%, #f97316 100%) !important;
+    background: #16a34a !important;
     box-shadow: 0 4px 16px rgba(249, 115, 22, 0.4) !important;
     transition: all 0.3s ease;
 }
 .dmtop:hover {
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    background: #f97316 !important;
     box-shadow: 0 6px 22px rgba(249, 115, 22, 0.6) !important;
     transform: translateY(-3px);
 }
@@ -3020,7 +3020,7 @@ header#site-header-inner.header-fixed-scrolled::before {
 
 /* Feature Hero Banners */
 .feature-hero {
-    background: linear-gradient(135deg, rgba(16, 24, 32, 0.92) 0%, rgba(20, 83, 45, 0.88) 100%), url('../images/client/stadium-full-academy.jpg') center center / cover no-repeat;
+    background: #0f172a url('../images/client/stadium-full-academy.jpg') center center / cover no-repeat;
     color: #ffffff;
     padding: 70px 0 50px 0;
     text-align: center;
