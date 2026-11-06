@@ -118,7 +118,7 @@
      text-transform: uppercase;
      min-width: 160px;
      height: 50px;
-     border-radius: 5px;
+     border-radius: 0;
 }
  .btn.btn-primary.btn-lg:hover,.btn.btn-primary.btn-lg:focus {
      background:#16a34a;
@@ -197,7 +197,7 @@ header#site-header-inner {
      color: #fff;
      font-size: 13px;
      background: #16a34a;
-     border-radius: 50px;
+     border-radius: 0;
      float: left;
 }
  .login li a:hover, .login li a:focus {
@@ -417,7 +417,7 @@ header#site-header-inner {
      padding: 12px 21px 12px;
      min-height: auto;
      height: auto;
-     border-radius: 0px;
+     border-radius: 0;
      font-style: italic;
      font-weight: 300;
      font-size: 18px;
@@ -1373,7 +1373,7 @@ section#contant h4 {
      color: #fff;
      border: none;
      padding: 6px 20px;
-     border-radius: 50px;
+     border-radius: 0;
      font-size: 14px;
      font-weight: 500;
 }
@@ -1480,7 +1480,7 @@ body section#contant .post-info span h4 {
      color: #fff;
      padding: 10px 20px;
      font-size: 15px;
-     border-radius: 50px;
+     border-radius: 0;
      margin-top: 5px;
      font-weight:500;
      transition:ease all 1s;
@@ -1768,7 +1768,7 @@ body section#contant .post-info span h4 {
      text-transform: none;
      letter-spacing: 0px;
      background: #16a34a;
-     border-radius: 0px;
+     border-radius: 0;
      transition: ease all 1s;
      color: #fff;
 }
@@ -1845,7 +1845,7 @@ body section#contant .post-info span h4 {
          display: block;
          width: 20px;
          height: 3px;
-         border-radius: 0px;
+         border-radius: 0;
     }
      .navbar-inverse .navbar-brand {
          color: #000;
@@ -2108,7 +2108,7 @@ body section#contant .post-info span h4 {
     z-index: 6;
     background: rgba(0, 0, 0, 0.45);
     padding: 30px 35px;
-    border-radius: 8px;
+    border-radius: 0;
     border-left: 4px solid #ffcb05;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(5px);
@@ -2207,7 +2207,7 @@ body section#contant .post-info span h4 {
         border: 1px solid rgba(255, 255, 255, 0.16) !important;
         border-top: 3.5px solid #f97316 !important;
         border-left: none !important;
-        border-radius: 12px !important;
+        border-radius: 0;
         backdrop-filter: blur(10px) !important;
         -webkit-backdrop-filter: blur(10px) !important;
         box-shadow: 0 14px 40px rgba(0, 0, 0, 0.65), 0 2px 10px rgba(0, 0, 0, 0.5) !important;
@@ -2258,7 +2258,7 @@ body section#contant .post-info span h4 {
         text-transform: uppercase !important;
         background: #16a34a !important;
         border: none !important;
-        border-radius: 25px !important;
+        border-radius: 0;
         color: #ffffff !important;
         box-shadow: 0 4px 16px rgba(22, 163, 74, 0.45) !important;
         transition: all 0.3s ease !important;
@@ -2320,7 +2320,7 @@ body section#contant .post-info span h4 {
     .slider-contant {
         max-width: 100% !important;
         padding: 18px 15px !important;
-        border-radius: 10px !important;
+        border-radius: 0;
     }
 
     .slider-contant h3 {
@@ -2379,7 +2379,7 @@ body section#contant .post-info span h4 {
 .right-match-time ul.countdown li {
     background: rgba(0, 0, 0, 0.65);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
+    border-radius: 0;
     padding: 8px 12px;
 }
 .right-match-time span {
@@ -2595,7 +2595,7 @@ header.header-fixed-scrolled .menu {
 .full-slider .carousel-indicators li.active {
     width: 34px;
     height: 12px;
-    border-radius: 6px;
+    border-radius: 0;
     background: #ffcb05;
     border-color: #ffcb05;
 }
@@ -2619,7 +2619,7 @@ header.header-fixed-scrolled .menu {
     gap: 8px;
     padding: 6px;
     background: #ffffff;
-    border-radius: 40px;
+    border-radius: 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     border: 1px solid #e2e8f0;
 }
@@ -2630,7 +2630,7 @@ header.header-fixed-scrolled .menu {
     color: #475569;
     background: transparent;
     border: none;
-    border-radius: 30px;
+    border-radius: 0;
     cursor: pointer;
     transition: all 0.25s ease;
     text-transform: uppercase;
@@ -2655,7 +2655,7 @@ header.header-fixed-scrolled .menu {
 }
 .gallery-card {
     position: relative;
-    border-radius: 12px;
+    border-radius: 0;
     overflow: hidden;
     background: #0f172a;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
@@ -2698,7 +2698,7 @@ header.header-fixed-scrolled .menu {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    border-radius: 20px;
+    border-radius: 0;
     background: #ffcb05;
     color: #0f172a;
     margin-bottom: 8px;
@@ -2741,7 +2741,7 @@ header.header-fixed-scrolled .menu {
 /* Gallery Metrics Counter Strip */
 .gallery-stats-strip {
     background: #ffffff;
-    border-radius: 12px;
+    border-radius: 0;
     padding: 25px 20px;
     margin-bottom: 45px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -2770,7 +2770,7 @@ header.header-fixed-scrolled .menu {
 }
 @media (max-width: 768px) {
     .gallery-filter-nav {
-        border-radius: 16px;
+        border-radius: 0;
         padding: 4px;
         width: 100%;
     }
@@ -2823,7 +2823,7 @@ header#site-header-inner.header-fixed-scrolled::before {
 .right_top_section .login li.login-modal a.login {
     background: #16a34a !important;
     color: #ffffff !important;
-    border-radius: 50px;
+    border-radius: 0;
     font-weight: 600;
     box-shadow: 0 4px 12px rgba(22, 163, 74, 0.35);
     transition: all 0.3s ease;
@@ -2840,7 +2840,7 @@ header#site-header-inner.header-fixed-scrolled::before {
     font-size: 13px;
     font-weight: 600;
     background: #f97316 !important;
-    border-radius: 50px;
+    border-radius: 0;
     float: left;
     box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
     transition: all 0.3s ease;
@@ -2873,12 +2873,28 @@ header#site-header-inner.header-fixed-scrolled::before {
     right: 0;
     height: 3.5px;
     background: #16a34a;
-    border-radius: 8px 8px 0 0;
+    border-radius: 0;
 }
 
 /* Fine Art Orange Button */
 .btn-orange,
+.btn,
+.button,
+.form-control,
+.program-card,
+.donation-tier-card,
+.pathway-step,
+.payment-channel-box,
+.custom-form-container,
 .btn.btn-orange,
+.btn,
+.button,
+.form-control,
+.program-card,
+.donation-tier-card,
+.pathway-step,
+.payment-channel-box,
+.custom-form-container,
 .btn.btn-primary.btn-orange {
     background: #f97316 !important;
     border-color: #ea580c !important;
@@ -2907,7 +2923,7 @@ header#site-header-inner.header-fixed-scrolled::before {
     background: #f97316 !important;
     color: #ffffff !important;
     box-shadow: 0 2px 10px rgba(249, 115, 22, 0.35) !important;
-    border-radius: 4px;
+    border-radius: 0;
     font-weight: 700;
 }
 .heading-slider p.headline i {
@@ -2942,7 +2958,7 @@ header#site-header-inner.header-fixed-scrolled::before {
     letter-spacing: 0.5px !important;
     text-transform: uppercase !important;
     padding: 3px 10px !important;
-    border-radius: 4px !important;
+    border-radius: 0;
     display: inline-block !important;
     margin-bottom: 8px !important;
     box-shadow: 0 2px 6px rgba(249, 115, 22, 0.3) !important;
@@ -3015,101 +3031,97 @@ header#site-header-inner.header-fixed-scrolled::before {
 
 /* ==================================================================
    ARUSHA DREAM FOOTBALL CENTRE - EXTENDED FEATURE STYLES
-   Programs, Support/Donations, Registration, Safeguarding & Search Modal
+   Authentic Athletic Theme Flow: Sharp Borders, Zero Border-Radius,
+   Matching index.html, about.html, and news.html
 ================================================================== */
 
-/* Feature Hero Banners */
-.feature-hero {
-    background: #0f172a url('../images/client/stadium-full-academy.jpg') center center / cover no-repeat;
-    color: #ffffff;
-    padding: 70px 0 50px 0;
-    text-align: center;
-}
-.feature-hero h1 {
-    font-size: 38px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 12px;
-    color: #ffffff;
-}
-.feature-hero p.subtitle {
-    font-size: 18px;
-    color: #fed7aa;
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-}
-.hero-pills {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
-}
-.hero-pill {
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 600;
-    color: #fff;
+/* Universal Sharp Corners - Athletic Football Theme */
+.program-card,
+.donation-tier-card,
+.pathway-step,
+.payment-channel-box,
+.custom-form-container,
+.gallery-card,
+.gallery-badge,
+.gallery-filter-btn,
+.btn-submit-green,
+.btn-submit-orange,
+.btn-whatsapp-direct,
+.donation-btn,
+.btn,
+.btn-orange,
+.btn-theme,
+.button,
+.form-control,
+.card,
+.news-post-widget,
+.content-widget,
+.dmtop,
+.search-modal-content,
+.search-result-item,
+.right_top_section .login li.login-modal a.login,
+.right_top_section .login li .cart-option a {
+    border-radius: 0 !important;
 }
 
-/* Age Category Cards */
+/* Program Cards (Ages 5 to U20) */
 .program-card {
     background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    border: solid #e1e1e1 1px;
     margin-bottom: 30px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    padding: 0;
+    transition: all 0.3s ease;
     border-top: 4px solid #16a34a;
     height: 100%;
 }
 .program-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+    border-color: #16a34a;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 .program-card.featured {
     border-top: 4px solid #f97316;
 }
+.program-card.featured:hover {
+    border-color: #f97316;
+}
 .program-card-header {
     padding: 20px 20px 10px 20px;
+    border-bottom: 1px solid #f1f5f9;
 }
 .program-badge {
     display: inline-block;
-    padding: 4px 12px;
+    padding: 4px 10px;
     font-size: 11px;
     font-weight: 700;
-    border-radius: 12px;
     text-transform: uppercase;
-    background: #e0f2fe;
-    color: #0284c7;
+    background: #0f172a;
+    color: #ffffff;
     margin-bottom: 8px;
+    letter-spacing: 0.5px;
 }
 .program-badge.primary {
-    background: #dcfce7;
-    color: #15803d;
+    background: #16a34a;
+    color: #ffffff;
 }
 .program-badge.accent {
-    background: #ffedd5;
-    color: #c2410c;
+    background: #f97316;
+    color: #ffffff;
 }
 .program-card h3 {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 700;
     color: #1e293b;
-    margin: 0 0 8px 0;
+    margin: 0 0 6px 0;
 }
 .program-card p.age-range {
     font-size: 13px;
     font-weight: 600;
     color: #f97316;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 .program-card-body {
-    padding: 0 20px 20px 20px;
+    padding: 15px 20px 20px 20px;
 }
 .program-card-body ul {
     list-style: none;
@@ -3119,8 +3131,9 @@ header#site-header-inner.header-fixed-scrolled::before {
 .program-card-body ul li {
     font-size: 13px;
     color: #475569;
-    padding: 4px 0 4px 22px;
+    padding: 5px 0 5px 20px;
     position: relative;
+    line-height: 1.6;
 }
 .program-card-body ul li::before {
     content: "⚽";
@@ -3129,29 +3142,28 @@ header#site-header-inner.header-fixed-scrolled::before {
     font-size: 11px;
 }
 
-/* Development Pathway Flow */
+/* 6-Stage Pathway Step Cards */
 .pathway-step {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 20px;
+    background: #ffffff;
+    border: solid #e1e1e1 1px;
+    padding: 20px 15px;
     text-align: center;
     position: relative;
     margin-bottom: 20px;
+    border-top: 3px solid #16a34a;
 }
 .pathway-step .step-number {
-    width: 38px;
-    height: 38px;
-    line-height: 38px;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
     background: #16a34a;
-    color: #fff;
-    border-radius: 50%;
+    color: #ffffff;
     margin: 0 auto 10px auto;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 14px;
 }
 .pathway-step h4 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     margin-bottom: 6px;
     color: #0f172a;
@@ -3160,32 +3172,32 @@ header#site-header-inner.header-fixed-scrolled::before {
     font-size: 12px;
     color: #64748b;
     margin: 0;
+    line-height: 1.6;
 }
 
-/* Donation & Sponsorship Cards */
+/* Donation & Impact Tier Cards */
 .donation-tier-card {
     background: #ffffff;
-    border: 2px solid #e2e8f0;
-    border-radius: 10px;
+    border: solid #e1e1e1 1px;
     padding: 25px 20px;
     text-align: center;
     transition: all 0.3s ease;
     margin-bottom: 25px;
+    border-top: 3px solid #ccc;
 }
 .donation-tier-card:hover {
     border-color: #f97316;
-    box-shadow: 0 8px 24px rgba(249, 115, 22, 0.15);
-    transform: translateY(-4px);
+    border-top-color: #f97316;
 }
 .donation-tier-card.highlight {
-    border-color: #16a34a;
-    background: #f0fdf4;
+    border-top-color: #16a34a;
+    background: #fdfdfd;
 }
 .donation-amount {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 800;
     color: #16a34a;
-    margin: 10px 0 5px 0;
+    margin: 10px 0 4px 0;
 }
 .donation-amount-usd {
     font-size: 13px;
@@ -3194,38 +3206,39 @@ header#site-header-inner.header-fixed-scrolled::before {
     margin-bottom: 12px;
 }
 .donation-impact {
-    font-size: 14px;
-    font-weight: 600;
-    color: #1e293b;
+    font-size: 13px;
+    font-weight: 500;
+    color: #334155;
     min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 1.5;
 }
 .donation-btn {
-    display: inline-block;
+    display: block;
     width: 100%;
     margin-top: 15px;
     padding: 10px;
     background: #f97316;
-    color: #fff;
+    color: #ffffff !important;
     font-weight: 700;
-    border-radius: 6px;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.5px;
+    border: none;
+    text-align: center;
 }
 .donation-btn:hover {
     background: #ea580c;
-    color: #fff;
+    color: #ffffff !important;
 }
 
-/* Payment Info Channels Box */
+/* Payment Channel Boxes */
 .payment-channel-box {
     background: #ffffff;
-    border-radius: 8px;
-    border-left: 5px solid #16a34a;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border: solid #e1e1e1 1px;
+    border-left: 4px solid #16a34a;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -3242,8 +3255,9 @@ header#site-header-inner.header-fixed-scrolled::before {
     border-left-color: #16a34a;
 }
 .payment-channel-title {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
+    color: #0f172a;
     margin-bottom: 6px;
 }
 .payment-channel-number {
@@ -3257,13 +3271,11 @@ header#site-header-inner.header-fixed-scrolled::before {
     color: #64748b;
 }
 
-/* Custom Interactive Forms (Registration, Sponsorship, Contact) */
+/* Custom Interactive Forms (Matching .contact-us in theme) */
 .custom-form-container {
     background: #ffffff;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    border: 1px solid #e2e8f0;
+    border: solid #e1e1e1 1px;
 }
 .custom-form-container .form-group {
     margin-bottom: 18px;
@@ -3276,13 +3288,11 @@ header#site-header-inner.header-fixed-scrolled::before {
     display: block;
 }
 .custom-form-container .form-control {
-    border: 1px solid #cbd5e1;
-    border-radius: 5px;
-    height: 42px;
-    padding: 8px 12px;
+    border: solid #ccc 1px;
+    height: 44px;
+    padding: 8px 14px;
     font-size: 14px;
     box-shadow: none;
-    transition: border-color 0.2s ease;
 }
 .custom-form-container textarea.form-control {
     height: auto;
@@ -3290,48 +3300,44 @@ header#site-header-inner.header-fixed-scrolled::before {
 }
 .custom-form-container .form-control:focus {
     border-color: #16a34a;
-    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+    outline: none;
+    box-shadow: none;
 }
 .btn-submit-green {
     background: #16a34a;
-    color: #fff;
-    font-weight: 700;
+    color: #ffffff !important;
+    font-weight: 600;
     border: none;
-    border-radius: 5px;
-    padding: 12px 24px;
+    padding: 12px 26px;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     cursor: pointer;
-    transition: background 0.2s ease;
+    display: inline-block;
 }
 .btn-submit-green:hover {
     background: #15803d;
-    color: #fff;
 }
 .btn-submit-orange {
     background: #f97316;
-    color: #fff;
-    font-weight: 700;
+    color: #ffffff !important;
+    font-weight: 600;
     border: none;
-    border-radius: 5px;
-    padding: 12px 24px;
+    padding: 12px 26px;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     cursor: pointer;
-    transition: background 0.2s ease;
+    display: inline-block;
 }
 .btn-submit-orange:hover {
     background: #ea580c;
-    color: #fff;
 }
 .btn-whatsapp-direct {
     background: #25D366;
-    color: #fff;
-    font-weight: 700;
+    color: #ffffff !important;
+    font-weight: 600;
     border: none;
-    border-radius: 5px;
     padding: 12px 20px;
     font-size: 14px;
     text-transform: uppercase;
@@ -3339,11 +3345,9 @@ header#site-header-inner.header-fixed-scrolled::before {
     align-items: center;
     gap: 8px;
     cursor: pointer;
-    transition: background 0.2s ease;
 }
 .btn-whatsapp-direct:hover {
     background: #128C7E;
-    color: #fff;
 }
 
 /* Site Search Overlay Modal */
@@ -3354,7 +3358,7 @@ header#site-header-inner.header-fixed-scrolled::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 23, 42, 0.85);
+    background: rgba(0, 0, 0, 0.85);
     z-index: 999999;
     align-items: center;
     justify-content: center;
@@ -3367,19 +3371,13 @@ header#site-header-inner.header-fixed-scrolled::before {
     background: #ffffff;
     width: 100%;
     max-width: 650px;
-    border-radius: 10px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    border: solid #e1e1e1 2px;
     overflow: hidden;
-    animation: modalSlide 0.25s ease-out;
-}
-@keyframes modalSlide {
-    from { transform: translateY(-30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
 }
 .search-modal-header {
     padding: 15px 20px;
-    background: #f8fafc;
-    border-bottom: 1px solid #e2e8f0;
+    background: #0f172a;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -3388,13 +3386,13 @@ header#site-header-inner.header-fixed-scrolled::before {
     margin: 0;
     font-size: 16px;
     font-weight: 700;
-    color: #0f172a;
+    color: #ffffff;
 }
 .search-modal-close {
     background: none;
     border: none;
-    font-size: 22px;
-    color: #64748b;
+    font-size: 24px;
+    color: #ffffff;
     cursor: pointer;
     line-height: 1;
 }
@@ -3409,8 +3407,6 @@ header#site-header-inner.header-fixed-scrolled::before {
     display: block;
     color: inherit;
     text-decoration: none;
-    transition: background 0.2s ease;
-    border-radius: 6px;
 }
 .search-result-item:hover {
     background: #f8fafc;
