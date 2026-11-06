@@ -37,7 +37,7 @@
 '                  <!-- button section -->\n' +
 '                  <ul class="login">\n' +
 '                     <li class="login-modal">\n' +
-'                        <a href="support.html" class="login"><i class="fa fa-heart"></i>Support Us</a>\n' +
+'                        <a href="sponsors.html#support-us" class="login"><i class="fa fa-heart"></i>Support Us</a>\n' +
 '                     </li>\n' +
 '                     <li>\n' +
 '                        <div class="cart-option">\n' +
@@ -114,7 +114,6 @@
 '                                       </li>\n' +
 '                                    </ul>\n' +
 '                                 </li>\n' +
-'                                 <li><a href="support.html">Support Us</a></li>\n' +
 '                                 <li><a href="sponsors.html">Sponsors</a></li>\n' +
 '                                 <li><a href="join.html">Join Free</a></li>\n' +
 '                                 <li><a href="team.html">Team</a></li>\n' +

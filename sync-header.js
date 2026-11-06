@@ -33,7 +33,6 @@ const pages = [
   { file: 'index.html', active: 'index.html' },
   { file: 'about.html', active: 'about.html' },
   { file: 'programs.html', active: 'programs.html' },
-  { file: 'support.html', active: 'support.html' },
   { file: 'sponsors.html', active: 'sponsors.html' },
   { file: 'join.html', active: 'join.html' },
   { file: 'safeguarding.html', active: 'programs.html' },
