@@ -1860,10 +1860,6 @@ body section#contant .post-info span h4 {
      .navbar-toggle {
          padding: 9px 9px;
     }
-     div.menu .dropdown.open > .dropdown-menu,
-     div.menu .dropdown:hover > .dropdown-menu {
-         display: block !important;
-     }
      div.menu .dropdown-menu {
          display:none;
     }
@@ -3016,180 +3012,418 @@ header#site-header-inner.header-fixed-scrolled::before {
     font-weight: bold;
 }
 
+
 /* ==================================================================
-   Programs Mega-Dropdown Refinement for Small Screens (Mobile & Tablet)
+   ARUSHA DREAM FOOTBALL CENTRE - EXTENDED FEATURE STYLES
+   Programs, Support/Donations, Registration, Safeguarding & Search Modal
 ================================================================== */
-@media (max-width: 991px) {
-    /* Mobile Navigation Links Appearance */
-    .main-menu-section .navbar-inverse .navbar-collapse ul.nav.navbar-nav {
-        margin: 0 !important;
-        padding: 10px 0 !important;
-        float: none !important;
-        width: 100% !important;
-    }
-    .main-menu-section .navbar-inverse .navbar-collapse ul.nav.navbar-nav > li {
-        float: none !important;
-        display: block !important;
-        width: 100% !important;
-        margin: 2px 0 !important;
-    }
-    .main-menu-section .navbar-inverse .navbar-collapse ul.nav.navbar-nav > li > a {
-        display: block !important;
-        float: none !important;
-        padding: 12px 16px !important;
-        font-size: 15px !important;
-        font-weight: 600 !important;
-        color: #1e293b !important;
-        background: transparent !important;
-        border-radius: 6px !important;
-        transition: all 0.2s ease !important;
-        border: none !important;
-    }
-    .main-menu-section .navbar-inverse .navbar-collapse ul.nav.navbar-nav > li.active > a,
-    .main-menu-section .navbar-inverse .navbar-collapse ul.nav.navbar-nav > li > a:hover,
-    .main-menu-section .navbar-inverse .navbar-collapse ul.nav.navbar-nav > li > a:focus {
-        color: #16a34a !important;
-        background: #f0fdf4 !important;
-        border-left: 4px solid #16a34a !important;
-        padding-left: 18px !important;
-    }
-    .main-menu-section .navbar-inverse .navbar-collapse ul.nav.navbar-nav > li.dropdown.open > a,
-    .main-menu-section .navbar-inverse .navbar-collapse ul.nav.navbar-nav > li.dropdown:hover > a {
-        color: #ea580c !important;
-        background: #fff7ed !important;
-        border-left: 4px solid #f97316 !important;
-        padding-left: 18px !important;
-    }
 
-    /* Allow dropdown to flow naturally in mobile menu */
-    .mega-dropdown,
-    li.dropdown.mega-dropdown {
-        position: relative !important;
-        float: none !important;
-        width: 100% !important;
-    }
-
-    /* Caret indicator visible on mobile */
-    .main-menu-section .navbar.navbar-inverse .navbar-collapse ul.nav.navbar-nav li a span.caret,
-    .navbar-nav > li.dropdown > a > .caret {
-        display: inline-block !important;
-        margin-left: 8px !important;
-        vertical-align: middle !important;
-        color: #f97316 !important;
-        border-top: 5px solid #f97316 !important;
-        border-right: 4px solid transparent !important;
-        border-left: 4px solid transparent !important;
-        transition: transform 0.25s ease;
-    }
-    .navbar-nav > li.dropdown.open > a > .caret,
-    .navbar-nav > li.dropdown:hover > a > .caret {
-        transform: rotate(180deg);
-    }
-
-    /* Display mega dropdown when open or hovered */
-    div.menu .dropdown.open > .dropdown-menu,
-    div.menu .dropdown:hover > .dropdown-menu,
-    .navbar-nav .dropdown.open > .dropdown-menu,
-    .navbar-nav .dropdown:hover > .dropdown-menu,
-    li.dropdown.mega-dropdown.open > .dropdown-menu.mega-dropdown-menu,
-    li.dropdown.mega-dropdown:hover > .dropdown-menu.mega-dropdown-menu {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-    }
-
-    /* Container styling on mobile */
-    div.menu .dropdown-menu,
-    div.menu .dropdown-menu.mega-dropdown-menu,
-    .main-menu-section .navbar-inverse .dropdown-menu.mega-dropdown-menu {
-        position: static !important;
-        float: none !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        min-height: auto !important;
-        top: auto !important;
-        left: 0 !important;
-        margin: 6px 0 10px 0 !important;
-        padding: 16px 14px 20px !important;
-        background: #f8fafc !important;
-        border: 1px solid #e2e8f0 !important;
-        border-top: 3px solid #f97316 !important;
-        border-radius: 8px !important;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
-    }
-
-    /* Columns stack vertically */
-    .mega-dropdown-menu .col-sm-8,
-    .mega-dropdown-menu .col-sm-4 {
-        width: 100% !important;
-        padding: 0 !important;
-        float: none !important;
-    }
-
-    /* Headers */
-    .mega-dropdown-menu .dropdown-header {
-        font-size: 13px !important;
-        font-weight: 700 !important;
-        color: #0f172a !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.5px !important;
-        padding: 8px 0 6px !important;
-        margin-top: 12px !important;
-        margin-bottom: 8px !important;
-        border-bottom: 1px solid #e2e8f0 !important;
-        float: none !important;
-    }
-    .mega-dropdown-menu .col-sm-8 .dropdown-header {
-        margin-top: 0 !important;
-    }
-
-    /* Age group links */
-    div.main-menu-section div.menu nav.navbar ul.nav li ul.dropdown-menu.mega-dropdown-menu ul li a {
-        display: block !important;
-        float: none !important;
-        width: 100% !important;
-        padding: 10px 14px !important;
-        font-size: 13px !important;
-        font-weight: 600 !important;
-        color: #1e293b !important;
-        background: #ffffff !important;
-        border: 1px solid #e2e8f0 !important;
-        border-radius: 6px !important;
-        margin: 5px 0 !important;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
-        transition: all 0.2s ease !important;
-    }
-    div.main-menu-section div.menu nav.navbar ul.nav li ul.dropdown-menu.mega-dropdown-menu ul li a:hover,
-    div.main-menu-section div.menu nav.navbar ul.nav li ul.dropdown-menu.mega-dropdown-menu ul li a:focus {
-        color: #ffffff !important;
-        background: linear-gradient(135deg, #16a34a 0%, #15803d 100%) !important;
-        border-color: #15803d !important;
-        transform: translateX(4px);
-    }
-
-    /* 100% Free Training item highlighted with orange */
-    div.main-menu-section div.menu nav.navbar ul.nav li ul.dropdown-menu.mega-dropdown-menu ul li:last-child a {
-        background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
-        color: #ffffff !important;
-        font-weight: 700 !important;
-        border: none !important;
-        box-shadow: 0 3px 10px rgba(249, 115, 22, 0.3) !important;
-    }
-
-    /* Carousel preview inside mega dropdown */
-    #menCollection {
-        margin-bottom: 15px !important;
-        border-radius: 8px !important;
-        overflow: hidden !important;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
-    }
-    #menCollection .item img {
-        width: 100% !important;
-        max-height: 180px !important;
-        object-fit: cover !important;
-        border-radius: 8px !important;
-    }
+/* Feature Hero Banners */
+.feature-hero {
+    background: linear-gradient(135deg, rgba(16, 24, 32, 0.92) 0%, rgba(20, 83, 45, 0.88) 100%), url('../images/client/stadium-full-academy.jpg') center center / cover no-repeat;
+    color: #ffffff;
+    padding: 70px 0 50px 0;
+    text-align: center;
+}
+.feature-hero h1 {
+    font-size: 38px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+.feature-hero p.subtitle {
+    font-size: 18px;
+    color: #fed7aa;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+.hero-pills {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+.hero-pill {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
 }
 
+/* Age Category Cards */
+.program-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #16a34a;
+    height: 100%;
+}
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+}
+.program-card.featured {
+    border-top: 4px solid #f97316;
+}
+.program-card-header {
+    padding: 20px 20px 10px 20px;
+}
+.program-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 12px;
+    text-transform: uppercase;
+    background: #e0f2fe;
+    color: #0284c7;
+    margin-bottom: 8px;
+}
+.program-badge.primary {
+    background: #dcfce7;
+    color: #15803d;
+}
+.program-badge.accent {
+    background: #ffedd5;
+    color: #c2410c;
+}
+.program-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 8px 0;
+}
+.program-card p.age-range {
+    font-size: 13px;
+    font-weight: 600;
+    color: #f97316;
+    margin-bottom: 12px;
+}
+.program-card-body {
+    padding: 0 20px 20px 20px;
+}
+.program-card-body ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+.program-card-body ul li {
+    font-size: 13px;
+    color: #475569;
+    padding: 4px 0 4px 22px;
+    position: relative;
+}
+.program-card-body ul li::before {
+    content: "⚽";
+    position: absolute;
+    left: 0;
+    font-size: 11px;
+}
 
+/* Development Pathway Flow */
+.pathway-step {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.pathway-step .step-number {
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #16a34a;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    font-weight: 700;
+    font-size: 15px;
+}
+.pathway-step h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #0f172a;
+}
+.pathway-step p {
+    font-size: 12px;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Donation & Sponsorship Cards */
+.donation-tier-card {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 25px;
+}
+.donation-tier-card:hover {
+    border-color: #f97316;
+    box-shadow: 0 8px 24px rgba(249, 115, 22, 0.15);
+    transform: translateY(-4px);
+}
+.donation-tier-card.highlight {
+    border-color: #16a34a;
+    background: #f0fdf4;
+}
+.donation-amount {
+    font-size: 26px;
+    font-weight: 800;
+    color: #16a34a;
+    margin: 10px 0 5px 0;
+}
+.donation-amount-usd {
+    font-size: 13px;
+    color: #64748b;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.donation-impact {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.donation-btn {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #f97316;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+.donation-btn:hover {
+    background: #ea580c;
+    color: #fff;
+}
+
+/* Payment Info Channels Box */
+.payment-channel-box {
+    background: #ffffff;
+    border-radius: 8px;
+    border-left: 5px solid #16a34a;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.payment-channel-box.mpesa {
+    border-left-color: #e11d48;
+}
+.payment-channel-box.airtel {
+    border-left-color: #dc2626;
+}
+.payment-channel-box.tigo {
+    border-left-color: #0284c7;
+}
+.payment-channel-box.bank {
+    border-left-color: #16a34a;
+}
+.payment-channel-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.payment-channel-number {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #0f172a;
+}
+.payment-channel-name {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* Custom Interactive Forms (Registration, Sponsorship, Contact) */
+.custom-form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid #e2e8f0;
+}
+.custom-form-container .form-group {
+    margin-bottom: 18px;
+}
+.custom-form-container label {
+    font-weight: 600;
+    font-size: 13px;
+    color: #334155;
+    margin-bottom: 6px;
+    display: block;
+}
+.custom-form-container .form-control {
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    height: 42px;
+    padding: 8px 12px;
+    font-size: 14px;
+    box-shadow: none;
+    transition: border-color 0.2s ease;
+}
+.custom-form-container textarea.form-control {
+    height: auto;
+    min-height: 100px;
+}
+.custom-form-container .form-control:focus {
+    border-color: #16a34a;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+}
+.btn-submit-green {
+    background: #16a34a;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.btn-submit-green:hover {
+    background: #15803d;
+    color: #fff;
+}
+.btn-submit-orange {
+    background: #f97316;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.btn-submit-orange:hover {
+    background: #ea580c;
+    color: #fff;
+}
+.btn-whatsapp-direct {
+    background: #25D366;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.btn-whatsapp-direct:hover {
+    background: #128C7E;
+    color: #fff;
+}
+
+/* Site Search Overlay Modal */
+#site-search-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.85);
+    z-index: 999999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#site-search-modal.active {
+    display: flex;
+}
+.search-modal-content {
+    background: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    overflow: hidden;
+    animation: modalSlide 0.25s ease-out;
+}
+@keyframes modalSlide {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.search-modal-header {
+    padding: 15px 20px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-modal-header h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+}
+.search-modal-close {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #64748b;
+    cursor: pointer;
+    line-height: 1;
+}
+.search-modal-body {
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.search-result-item {
+    padding: 12px 14px;
+    border-bottom: 1px solid #f1f5f9;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.2s ease;
+    border-radius: 6px;
+}
+.search-result-item:hover {
+    background: #f8fafc;
+    text-decoration: none;
+}
+.search-result-title {
+    font-weight: 700;
+    font-size: 15px;
+    color: #16a34a;
+    margin-bottom: 3px;
+}
+.search-result-snippet {
+    font-size: 13px;
+    color: #64748b;
+    margin: 0;
+}

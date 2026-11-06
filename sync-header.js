@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const root = 'd:/my-workshop/projects/arushadreamfc';
+const root = __dirname;
 const headerHtmlPath = path.join(root, 'header.html');
 const headerJsPath = path.join(root, 'js/header.js');
 
@@ -32,9 +32,17 @@ if (regex.test(jsContent)) {
 const pages = [
   { file: 'index.html', active: 'index.html' },
   { file: 'about.html', active: 'about.html' },
+  { file: 'programs.html', active: 'programs.html' },
+  { file: 'support.html', active: 'support.html' },
+  { file: 'join.html', active: 'join.html' },
+  { file: 'safeguarding.html', active: 'programs.html' },
   { file: 'team.html', active: 'team.html' },
   { file: 'news.html', active: 'news.html' },
   { file: 'news-detail.html', active: 'news.html' },
+  { file: 'news-65-players.html', active: 'news.html' },
+  { file: 'news-girls-football.html', active: 'news.html' },
+  { file: 'news-charity-model.html', active: 'news.html' },
+  { file: 'news-education-football.html', active: 'news.html' },
   { file: 'gallery.html', active: 'gallery.html' },
   { file: 'contact.html', active: 'contact.html' }
 ];
@@ -53,7 +61,7 @@ pages.forEach(p => {
   );
 
   const blockToInject = customHeader + '\n         <script src="js/header.js"></script>';
-  const targetRegex = /(?:<div id="site-header"><\/div>\s*<script src="js\/header\.js"><\/script>|<header id="site-header-inner">[\s\S]*?<\/header>(?:\s*<script src="js\/header\.js"><\/script>)?)/;
+  const targetRegex = /(?:<!-- =+[\s\S]*?GLOBAL MASTER HEADER[\s\S]*?<\/header>(\s*<script src="js\/header\.js"><\/script>)?|<div id="site-header"><\/div>\s*<script src="js\/header\.js"><\/script>|<header id="site-header-inner">[\s\S]*?<\/header>(?:\s*<script src="js\/header\.js"><\/script>)?)/;
 
   if (targetRegex.test(pageHtml)) {
     pageHtml = pageHtml.replace(targetRegex, blockToInject);
