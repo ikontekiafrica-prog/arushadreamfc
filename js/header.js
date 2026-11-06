@@ -115,6 +115,7 @@
 '                                    </ul>\n' +
 '                                 </li>\n' +
 '                                 <li><a href="support.html">Support Us</a></li>\n' +
+'                                 <li><a href="sponsors.html">Sponsors</a></li>\n' +
 '                                 <li><a href="join.html">Join Free</a></li>\n' +
 '                                 <li><a href="team.html">Team</a></li>\n' +
 '                                 <li><a href="news.html">News</a></li>\n' +

@@ -412,6 +412,7 @@ var ADFC_SEARCH_INDEX = [
     { title: "U18 – U20 Elite Academy", url: "programs.html#u20", snippet: "Elite career preparation, professional club pathways, and competitive excellence." },
     { title: "Girls' & Women's Football Programme", url: "programs.html#girls", snippet: "Grassroots and youth training empowering girls and young women in football." },
     { title: "Support Us & Sponsorship", url: "support.html", snippet: "100% Charity Football Model. Support training equipment, player kits, boots, M-Pesa, Tigo Pesa, and bank donations." },
+    { title: "Sponsors & Strategic Partners", url: "sponsors.html", snippet: "Corporate CSR, kit branding, title partnerships, equipment sponsors, and community partners." },
     { title: "Donate via M-Pesa & Tigo Pesa", url: "support.html#channels", snippet: "Mobile money donation details: M-Pesa +255 752 553 876 (Engineer Matokeo Owden)." },
     { title: "Join Free - Player Registration & Trials", url: "join.html", snippet: "100% free enrollment for boys & girls aged 5 to U20. No joining fee, no kit fees, all equipment provided." },
     { title: "Safeguarding & Child Protection Policy", url: "safeguarding.html", snippet: "Zero tolerance for abuse, safe travel, coach standards, and welfare contact led by Amina Bakari." },
